@@ -25,7 +25,7 @@ module "ResourceGroup" {
 module "StorageAccount" {
   source = "./StorageAccount" #ruta,  
   #Definimos las variables
-  base_name           = "mystorageaccountterraform22"    #El script crea un storage anteponiendo Cool y Hot (todo en miniutos)
+  base_name           = "mystoragea22"                   #El script crea un storage anteponiendo Cool y Hot (todo en miniutos)
   dlgen2_name         = "mydatalakegen2terraform"        #Los Data Lake Gen2 se crean tanto en Cool como en Cool
   resource_group_name = module.ResourceGroup.rg_name_out #varaibles de salida rg_location_out rg_name_out 
   location            = module.ResourceGroup.rg_location_out
